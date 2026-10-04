@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rayann Gbadamassi — Architecture d'intérieur · Portfolio 2026</title>
+  <meta name="description" content="Portfolio de Rayann Gbadamassi, étudiant en architecture d'intérieur à Lille : 8 projets, plans, rendus 3D et moodboards (2022 — 2026).">
+  <meta property="og:title" content="Rayann Gbadamassi — Architecture d'intérieur">
+  <meta property="og:description" content="8 projets · plans, rendus 3D et moodboards · 2022 — 2026">
+  <meta property="og:image" content="assets/projets/08-japandi-master-suite/rendus/rendu-02.jpg">
+  <meta name="theme-color" content="#F6EFE6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="barre" id="barre">
+    <a class="barre__nom" href="#/">Rayann Gbadamassi</a>
+    <nav class="barre__nav" aria-label="Navigation principale">
+      <a href="#/" data-lien="projets">Projets</a>
+      <a href="#/profil" data-lien="profil">Profil</a>
+      <a href="#contact" data-lien="contact">Contact</a>
+    </nav>
+    <div class="barre__progression" aria-hidden="true"><span id="progression"></span></div>
+  </header>
+
+  <main id="contenu" tabindex="-1"></main>
+
+  <footer class="pied" id="contact"></footer>
+
+  <!-- Visionneuse plein écran : rendus, plans et moodboards -->
+  <div class="visionneuse" id="visionneuse" role="dialog" aria-modal="true" aria-label="Visionneuse d'images" hidden>
+    <div class="visionneuse__haut">
+      <p class="visionneuse__legende" id="vis-legende"></p>
+      <div class="visionneuse__outils">
+        <button type="button" data-action="moins" aria-label="Dézoomer">−</button>
+        <button type="button" data-action="reset" id="vis-zoom" aria-label="Réinitialiser le zoom">100 %</button>
+        <button type="button" data-action="plus" aria-label="Zoomer">+</button>
+        <button type="button" data-action="fermer" aria-label="Fermer">✕</button>
+      </div>
+    </div>
+    <div class="visionneuse__scene" id="vis-scene">
+      <img id="vis-image" alt="" draggable="false">
+    </div>
+    <button type="button" class="visionneuse__fleche visionneuse__fleche--prec" data-action="prec" aria-label="Image précédente">←</button>
+    <button type="button" class="visionneuse__fleche visionneuse__fleche--suiv" data-action="suiv" aria-label="Image suivante">→</button>
+    <p class="visionneuse__aide" id="vis-aide">Molette ou pincement pour zoomer · glisser pour se déplacer</p>
+  </div>
+
+  <noscript><p style="padding:2rem">Ce portfolio a besoin de JavaScript pour s'afficher.</p></noscript>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
