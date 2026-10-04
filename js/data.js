@@ -249,7 +249,7 @@
         email: 'rayanngba@gmail.com',
         telephone: '+33 7 43 04 25 64',
         ville: 'Lille, France',
-        linkedin: { nom: '/rayann-gbadamassi', url: 'https://www.linkedin.com/in/rayann-gbadamassi' },
+        linkedin: { nom: '/rayann-gbadamassi', url: 'https://www.linkedin.com/in/rayann-gbadamassi-420691162/' },
         instagram: { nom: '@rg_creation_design', url: 'https://www.instagram.com/rg_creation_design' },
       },
       infos: [
